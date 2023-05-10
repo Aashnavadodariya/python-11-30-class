@@ -11,9 +11,9 @@ even=open("even.txt","w")
 odd=open("odd.txt","w")
 l=data.read().split(",")[:-1]
 for i in 1:
-    if int(i)%2==0:
-        even.write(i+",")
-    else:
+     if int(i)%2==0:
+         even.write(i+",")
+     else:
         odd.write(i+",")
         
 data.close()
