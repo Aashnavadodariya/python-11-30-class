@@ -1,10 +1,9 @@
-def not_poor(str1):
-    snot=str1.find('not')
-    sbad=str1.find('poor')
-
-    if sbad> snot:
-        str1=str1.replace(str1[snot:(sbad+4)],'good')
-    return str1
-print(not_poor("the lyrics is not that poor!"))
-        
-    
+s="a boy is not in poor"
+l1=0
+l2=0
+if "not" in s:
+    l1=s.index("not")
+    if "poor" in s:
+        l2=s.index("poor")
+if l2-l1==4:
+    s.replace("not poor","good")
